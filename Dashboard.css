@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.container{
+   display: flex;
+   width: 100%;
+  
+   background-color: aliceblue;
+}
+.container-fluid{
+    background-color: aliceblue;
+    height: 1000px;
+}
+.left{
+    margin-left: -20px;
+    margin-right: -10px;
+   border-radius: 50px;
+    width: 160px;
+    background-color: darkblue;
+    margin-top: 20px;
+    height: 500px;
+}
+.left ul{
+    margin-left: -10px;
+    margin-top: 80px;
+}
+.left ul h5{
+    font-size: 17px;
+    padding: 12px 14px;
+}
+.left ul a{
+    text-decoration: none;
+    color: white;
+}
+.left ul h4 a:hover{
+  color: orange;
+   font-weight: bolder;
+}
+.left button{
+   width: 120px;
+    height: 45px;
+     border-radius: 20px;
+     margin: 20px;
+      border: none;
+       margin-top: 100px;
+}
+.left button:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s all ease-in-out;
+}
+.right{
+    margin-left: 20px;
+    margin-right: -35px;
+    width: 800px;
+    background-color: aliceblue;
+    height: 1000px;
+}
+.logout{
+    margin-top: 50px;
+
+}
+.logout button a{
+    text-decoration: none;
+    color:  black;
+}
+.logout button{
+    width: 100px;
+    height: 40px;
+    background-color: orange;
+    border:  none;
+    margin-left: 30px;
+    border-radius: 15px;
+}
+.logout button:hover{
+    background-color: black;
+    color: white;
+}
+.right h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+.right input{
+    width: 500px;
+    margin-left: 20px;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+    height: 30px;
+}
+.right button{
+    width: 200px; height: 45px; border-radius: 10px; border: none; background-color: black; margin: 15px; color: white;
+}
+.container button:hover{
+    background-color: white;
+    color: black;
+    transition: 0.5s all ease-in-out;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Registration.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+     <div class="container-fluid">
+            <div class="container text-center">
+                <div class="row">
+                  <div class="col">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <i style="font-size: 180px; color: darkblue; margin-top: 20px;" class="bi bi-person-bounding-box"></i>
+                  </div>
+                  <div class="col">
+                    <br>
+                    <br>
+                    <h1 style="color: black; font-weight: bold; text-align: center; margin-top: 20px;">Sign-In</h1>
+                    <br>
+                    <input style="text-align: center; height: 35px; width: 220px; border-radius: 10px; color: black; background-color: aliceblue; border: none; border-bottom: 2px solid darkblue;" type="email" name="email" id="email" placeholder="Email" required>
+                    <br>
+                    <br>
+                    <input style="text-align: center; height: 35px; width: 220px; border-radius: 10px; color: black; background-color: aliceblue; border: none; border-bottom: 2px solid darkblue;" type="password" name="password" id="password" placeholder="Password" required>
+                    <br>
+                    <br>
+                    <button onclick="Check()">Submit</button>
+
+                    <br>
+                    <br>
+                  </div>
+                  <div class="col">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <i style="font-size: 180px; color: darkblue; margin-top: 20px;" class="bi bi-person-bounding-box"></i>
+                  </div>
+           
+              </div>
+        </div>
+     </div>
+ <script>
+
+ function Check (){
+  const id = document.getElementById('email');
+  const password = document.getElementById('password');
+
+
+   if(password.value == '12345678' && email.value == 'mbun@gmail.com'){
+    console.log("success");
+    window.location.assign('AdminDashboard.php');
+   }
+   else if(password === ""  &&  email === ""){
+    console.log("fill");
+   }
+   else{
+    console.log("failed");
+   }
+ }
+
+ </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    
+</body>
+</html>

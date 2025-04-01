@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+.container-fluid{
+    background-color: darkblue;
+    height: 3000px;
+}
+.container{
+    background-color: darkblue;
+    height: 3000px;
+    /* border: 2px solid black; */
+    margin-top: 100px;
+}
+.container-fluid h1{
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+.row button{
+    width: 200px;
+    height: 60px;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: aliceblue;
+    margin-top: 40px;
+   
+}
+.row button:hover{
+    font-size: 25px;
+    transition: 0.5s all ease-in-out;
+    background-color: black;
+    color: white;
+}

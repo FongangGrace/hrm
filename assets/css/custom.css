@@ -1,0 +1,54 @@
+/* Custom styles to complement Tailwind and Bootstrap */
+:root {
+    --primary-color: #1e40af;
+    --secondary-color: #fbbf24;
+    --background-light: #f3f4f6;
+}
+
+.auth-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--primary-color), #1e3a8a);
+}
+
+.auth-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-sidebar {
+    height: 100vh;
+    background: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.dashboard-content {
+    background: var(--background-light);
+    min-height: 100vh;
+}
+
+.stat-card {
+    transition: transform 0.2s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Custom animations */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .auth-card {
+        margin: 1rem;
+    }
+}
